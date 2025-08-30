@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Елементи форматування та міні-гра</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Елементи форматування та міні-гра</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Новини Дня</h1>
+        <p>Сьогодні вас чекають <strong>найсвіжіші</strong> Новини</p>
+        <p>Перед тим, як ви не пролистнули, ознайомтесь з крутою цитатою:</p>
+        <p>Антоненко сказав:<q>Правда завжди перемагає</q></p>
+    </main>
+    <article>
+        <h2>Моурінью заробив 106 мільйонів євро компенсацій</h2>
+        <figure>
+            <img src="img/imas.jpg" width="700" height="300" alt="Моурінью">
+        </figure>
+        <p class="news-one">Знаменитий португальський фахівець Жозе Моурінью<br> заробив 106 мільйонів
+            євро компенсацій за 7 відставок під час своєї тренерської кар'єри.</p>
+    </article>
+
+    <article>
+        <h2>Вчені назвали найкращу музику для сну і це не лише колискові</h2>
+        <p>Прослухайте цю музику для кращого сну</p>
+        <audio controls>
+            <source src="source/videos.mp3" type="audio/mpeg">
+            <source src="source/videos.ogg" type="audio/ogg">
+            Ваш браузер не підтримує аудіо.
+        </audio>
+    </article>
+
+    <article>
+        <h2>Прекрасні місця світу</h2>
+        <p>Сьогодні наш оператор побував в чудових місцях і ми показили це вам</p>
+        <video controls width="600">
+            <source src="video/60fps.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео.
+        </video>
+
+    </article>
+
+    <article>
+        <h2>Продаж Mercedes у 2025 році шокував</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Модель</th>
+                    <th>Продано машин</th>
+                    <th>Країна</th>
+                    <th>Ціна (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mercedes A-Class</td>
+                    <td>5,000</td>
+                    <td>Італія</td>
+                    <td>35,000</td>
+                </tr>
+                <tr>
+                    <td>Mercedes C-Class</td>
+                    <td>4,500</td>
+                    <td>США</td>
+                    <td>45,000</td>
+                </tr>
+                <tr>
+                    <td>Mercedes GLE</td>
+                    <td>3,200</td>
+                    <td>Угорщина</td>
+                    <td>65,000</td>
+                </tr>
+                <tr>
+                    <td>Mercedes EQS</td>
+                    <td>1,800</td>
+                    <td>Франція</td>
+                    <td>120,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+    <article>
+        <h2>Ресторани у Києві</h2>
+        <p>Київ славиться своїми ресторанами, які пропонують різноманітні кухні світу.</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.83675621916!2d30.36788584432714!3d50.40213793559937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1756495732100!5m2!1suk!2sua"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
+    <h3>Гра Вгадай число</h3>
+    <p>Вгадайте число від 1 до 100.</p>
+
+    <input type="number" id="guessInput" placeholder="Введіть ваше число">
+    <button onclick="checkGuess()">Спробувати</button>
+
+    <p id="result"></p>
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
